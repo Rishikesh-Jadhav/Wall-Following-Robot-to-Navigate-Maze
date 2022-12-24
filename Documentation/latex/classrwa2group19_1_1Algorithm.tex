@@ -1,0 +1,73 @@
+\hypertarget{classrwa2group19_1_1Algorithm}{}\doxysection{rwa2group19\+::Algorithm Class Reference}
+\label{classrwa2group19_1_1Algorithm}\index{rwa2group19::Algorithm@{rwa2group19::Algorithm}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::array$<$ std\+::string, 4 $>$ $>$ \mbox{\hyperlink{classrwa2group19_1_1Algorithm_abf788e3ea8c52107568b5b00d57adac2}{m\+\_\+left\+\_\+wall\+\_\+follower}} (std\+::array$<$ int, 2 $>$ goal)
+\begin{DoxyCompactList}\small\item\em This method implements the Left Wall Follower \mbox{\hyperlink{classrwa2group19_1_1Algorithm}{Algorithm}} ~\newline
+ \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::array$<$ std\+::string, 4 $>$ $>$ \mbox{\hyperlink{classrwa2group19_1_1Algorithm_adfe7f98174c87be8cdadacff0c134ba5}{m\+\_\+right\+\_\+wall\+\_\+follower}} (std\+::array$<$ int, 2 $>$ goal)
+\begin{DoxyCompactList}\small\item\em This method implements the Right Wall Follower \mbox{\hyperlink{classrwa2group19_1_1Algorithm}{Algorithm}} ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrwa2group19_1_1Algorithm_a52470b7cdd1d4ad03401a56e1d26548b}{m\+\_\+return\+\_\+path}} (std\+::vector$<$ std\+::array$<$ std\+::string, 4 $>$$>$ cell\+\_\+data)
+\begin{DoxyCompactList}\small\item\em This method is used for returning back to H\+O\+ME i.\+e. cell (0,0) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrwa2group19_1_1Algorithm_abf788e3ea8c52107568b5b00d57adac2}\label{classrwa2group19_1_1Algorithm_abf788e3ea8c52107568b5b00d57adac2}} 
+\index{rwa2group19::Algorithm@{rwa2group19::Algorithm}!m\_left\_wall\_follower@{m\_left\_wall\_follower}}
+\index{m\_left\_wall\_follower@{m\_left\_wall\_follower}!rwa2group19::Algorithm@{rwa2group19::Algorithm}}
+\doxysubsubsection{\texorpdfstring{m\_left\_wall\_follower()}{m\_left\_wall\_follower()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::array$<$ std\+::string, 4 $>$ $>$ rwa2group19\+::\+Algorithm\+::m\+\_\+left\+\_\+wall\+\_\+follower (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{goal }\end{DoxyParamCaption})}
+
+
+
+This method implements the Left Wall Follower \mbox{\hyperlink{classrwa2group19_1_1Algorithm}{Algorithm}} ~\newline
+ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em goal} & of type integer array with two elements \{x,y\}; x,y-\/coordinates of the goal cell \\
+\hline
+\mbox{\texttt{ out}}  & {\em cell\+\_\+info;} & a vector which contains string arrays of size 4; this vector contains all the information of a cell . that is\+: x-\/coordiante, y-\/coordiante, the direction in which the robot entered the cell and direction in which it left \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrwa2group19_1_1Algorithm_a52470b7cdd1d4ad03401a56e1d26548b}\label{classrwa2group19_1_1Algorithm_a52470b7cdd1d4ad03401a56e1d26548b}} 
+\index{rwa2group19::Algorithm@{rwa2group19::Algorithm}!m\_return\_path@{m\_return\_path}}
+\index{m\_return\_path@{m\_return\_path}!rwa2group19::Algorithm@{rwa2group19::Algorithm}}
+\doxysubsubsection{\texorpdfstring{m\_return\_path()}{m\_return\_path()}}
+{\footnotesize\ttfamily void rwa2group19\+::\+Algorithm\+::m\+\_\+return\+\_\+path (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::array$<$ std\+::string, 4 $>$$>$}]{cell\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+This method is used for returning back to H\+O\+ME i.\+e. cell (0,0) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cell\+\_\+data;} & a vector which contains string arrays of size 4; this is the same vector which was returned by the wall following algorithm. individual array contains\+: x-\/coordiante, y-\/coordiante, the direction in which the robot entered the cell and direction in which it left. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrwa2group19_1_1Algorithm_adfe7f98174c87be8cdadacff0c134ba5}\label{classrwa2group19_1_1Algorithm_adfe7f98174c87be8cdadacff0c134ba5}} 
+\index{rwa2group19::Algorithm@{rwa2group19::Algorithm}!m\_right\_wall\_follower@{m\_right\_wall\_follower}}
+\index{m\_right\_wall\_follower@{m\_right\_wall\_follower}!rwa2group19::Algorithm@{rwa2group19::Algorithm}}
+\doxysubsubsection{\texorpdfstring{m\_right\_wall\_follower()}{m\_right\_wall\_follower()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::array$<$ std\+::string, 4 $>$ $>$ rwa2group19\+::\+Algorithm\+::m\+\_\+right\+\_\+wall\+\_\+follower (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{goal }\end{DoxyParamCaption})}
+
+
+
+This method implements the Right Wall Follower \mbox{\hyperlink{classrwa2group19_1_1Algorithm}{Algorithm}} ~\newline
+ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em goal} & of type integer array with two elements \{x,y\}; x,y-\/coordinates of the goal cell \\
+\hline
+\mbox{\texttt{ out}}  & {\em cell\+\_\+info;} & a vector which contains string arrays of size 4; this vector contains all the information of a cell . that is\+: x-\/coordiante, y-\/coordiante, the direction in which the robot entered the cell and direction in which it left \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+application/algorithm/\mbox{\hyperlink{algorithm_8h}{algorithm.\+h}}\item 
+application/algorithm/algorithm.\+cpp\end{DoxyCompactItemize}
